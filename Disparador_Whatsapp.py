@@ -4,10 +4,10 @@ import time
 import pandas as pd
 
 country='55'
-data = pd.read_csv(r"C: Escreva aqui endereço da planilha no computador ",
+data = pd.read_csv(r"C: Escreva aqui o endereço da planilha no computador ",
 delimiter=r';', encoding="utf-8-sig")
 data_dict = data.to_dict('list') 
-leads = data_dict['leadnumber'] # Nome da coluna de numeros no excel
+leads = data_dict['leadnumber'] # Nome da coluna de números no excel
 messages = data_dict['message'] # Nome da coluna de mensagens no excel
 combo = zip(leads,messages)
 first = True
